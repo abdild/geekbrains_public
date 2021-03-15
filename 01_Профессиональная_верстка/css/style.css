@@ -155,45 +155,45 @@ section {
     color: #9F9F9F;
     text-align: center;
 }
-.goods-block {
+.product-block {
     padding: 48px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.good-item {
+.product-item {
     width: 360px;
     background-color: #F8F8F8;
     position: relative;
 }
-.good-item__img {
+.product-item__img {
     width: 100%;
 }
-.good-item__content {
+.product-item__content {
     padding: 25px 16px 20px;
 }
-.good-item__title {
+.product-item__title {
     font-size: 0.93rem;
     color: #000000;
     text-transform: uppercase;
 }
-.good-item__desc {
+.product-item__desc {
     padding: 12.65px 0 18px;
     color: #5D5D5D;
     font-weight: 300;
 }
-.good-item__price {
+.product-item__price {
     font-size: 1.143rem;
     color: #F16D7F;
 }
-.good-item:hover .good-item__img {
+.product-item:hover .product-item__img {
     filter: brightness(0.5);
     transition: 0.3s;
 }
-.good-item:hover .good-item__add {
+.product-item:hover .product-item__add {
     display: flex;
 }
-.good-item__add {
+.product-item__add {
     width: 139px;
     height: 44px;
     position: absolute;
@@ -205,15 +205,15 @@ section {
     border: 1px solid #ffffff;
     color: #ffffff;
 }
-.good-item__basket {
+.product-item__basket {
     margin-right: 11px;
 }
-.good-item__add:hover {
+.product-item__add:hover {
     background-color: #ffffff;
     color: #000000;
     transition: 0.3s;
 }
-.good-item__add:hover .good-item__basket path {
+.product-item__add:hover .product-item__basket path {
     fill: #000000;
     transition: 0.3s;
 }
@@ -406,4 +406,43 @@ footer {
 .pagination-num:hover {
     color: #EF5B70;
     transition: 0.3s;
+}
+.product-one {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-one__img {
+    padding: 11px 0 42px 0;
+}
+.product-arrow {
+    width: 47px;
+    height: 47px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-arrow:hover svg path {
+    fill: #F16D7F;
+    transition: 0.3s;
+}
+.product-one__content {
+    border: 1px solid #EAEAEA;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -65px;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+.product-one-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 17px;
+    color: #F16D7F;
 }
