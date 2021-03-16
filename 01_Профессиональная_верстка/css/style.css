@@ -23,18 +23,6 @@ a {
   text-decoration: none;
 }
 
-input, textarea {
-  outline: none;
-}
-
-input:active, textarea:active {
-  outline: none;
-}
-
-input:focus, textarea:focus {
-  outline: none;
-}
-
 nav {
   width: 100%;
   background-color: #222222;
@@ -51,7 +39,6 @@ nav {
 }
 
 main {
-  /*height: calc(100vh - 150px);*/
   padding-top: 75px;
 }
 
