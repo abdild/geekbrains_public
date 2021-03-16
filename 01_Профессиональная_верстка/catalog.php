@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Каталог</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<?php include('header-menu.php'); ?>
+<?php include('header-menu.php') ?>
 <main>
     <!-- Header -->
     <header class="centered">
         <div class="header-title">NEW ARRivALS</div>
         <div class="header-breadcrumbs">
-            HOME / MEN / <span class="accent" style="font-weight: bold;">NEW ARRIVALS</span>
+            HOME / MEN / <span class="accent" style="font-weight: bold">NEW ARRIVALS</span>
         </div>
     </header>
 
@@ -50,9 +40,9 @@
         </div>
         <div class="product-block">
             <div class="product-item">
-                <a href="#"><img src="img/c01.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c01.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -66,9 +56,9 @@
                 </a>
             </div>
             <div class="product-item">
-                <a href="#"><img src="img/c02.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c02.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -82,9 +72,9 @@
                 </a>
             </div>
             <div class="product-item">
-                <a href="#"><img src="img/c03.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c03.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -98,9 +88,9 @@
                 </a>
             </div>
             <div class="product-item">
-                <a href="#"><img src="img/c04.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c04.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -114,9 +104,9 @@
                 </a>
             </div>
             <div class="product-item">
-                <a href="#"><img src="img/c05.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c05.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -130,9 +120,9 @@
                 </a>
             </div>
             <div class="product-item">
-                <a href="#"><img src="img/c06.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c06.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -146,9 +136,9 @@
                 </a>
             </div>
             <div class="product-item">
-                <a href="#"><img src="img/c07.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c07.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -162,9 +152,9 @@
                 </a>
             </div>
             <div class="product-item">
-                <a href="#"><img src="img/c08.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c08.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -178,9 +168,9 @@
                 </a>
             </div>
             <div class="product-item">
-                <a href="#"><img src="img/c09.jpg" class="product-item__img" alt="good"></a>
+                <a href="product.php"><img src="img/c09.jpg" class="product-item__img" alt="good"></a>
                 <div class="product-item__content">
-                    <a class="product-item__title" href="#">ELLERy X M'O CAPSULE</a>
+                    <a class="product-item__title" href="product.php">ELLERy X M'O CAPSULE</a>
                     <div class="product-item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                     <div class="product-item__price">$52.00</div>
                 </div>
@@ -204,7 +194,7 @@
             $page = [1, 2, 3, 4, 5, 6, "...", 20];
             foreach ($page as $item): ?>
                 <a class="pagination-num" href="#"><?=$item ?></a>
-            <?php endforeach;?>
+            <?php endforeach?>
             <a href="#">
                 <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black"/>
@@ -212,9 +202,9 @@
             </a>
         </div>
     </div>
-    <?php include('info.php'); ?>
-    <?php include('subscriber.php'); ?>
+    <?php include('info.php') ?>
+    <?php include('subscriber.php') ?>
 </main>
-<?php include('footer.php'); ?>
+<?php include('footer.php') ?>
 </body>
 </html>
