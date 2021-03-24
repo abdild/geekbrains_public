@@ -11,6 +11,9 @@
   input :active, :hover, :focus
     outline: 0
     outline-offset: 0
+  input::placeholder
+    color: #B1B1B1
+
 
 h1
   font-weight: 900
@@ -68,9 +71,20 @@ header
 
 .header-breadcrumbs
   text-transform: uppercase
-  font-weight: 300
-  line-height: 17px
-  color: #636363
+  // display: flex
+  // gap: 12px
+
+  & a    
+    font-weight: 300
+    color: #636363
+  
+.breadcrumbs-item
+
+  &:hover
+    color: $colorPink_light
+  
+  &::after
+    content: " / "
 
 /* Top menu */
 .nav__menu-left, .nav__menu-right
@@ -279,8 +293,11 @@ section
     line-height: 17px
     color: #FBFBFB
 
-.subscribe-block
+.subscriber-bg
   background: url('../img/bg_subscribe.jpg') no-repeat center
+
+
+.subscribe-block
   height: 448px
   display: flex
   justify-content: space-between
@@ -323,7 +340,7 @@ section
     align-items: center
     align-content: center
 
-  &__input input
+  &__email
     width: 256px
     height: 49px
     background-color: #E1E1E1
@@ -343,10 +360,10 @@ section
     padding: 14px 0px
     box-sizing: border-box
     color: #ffffff
+    transition: 0.3s
 
   &__button:hover
     background-color: #E05C6E
-    transition: 0.3s
 
 footer
   height: 79px
@@ -590,6 +607,7 @@ hr
   display: flex
   align-items: center
   justify-content: space-around
+  border: none
   transition: 0.3s
 
   &__cart-manage
@@ -638,7 +656,6 @@ hr
     padding-left: 17px
     padding-right: 17px
     box-sizing: border-box
-    color: #B1B1B1
     
   & label
     font-weight: 300
@@ -673,3 +690,64 @@ hr
   margin-left: 24px
   font-size: inherit
   font-weight: inherit
+
+.form-desc
+  width: 360px
+  font-weight: 300
+  font-size: 0.928rem
+  line-height: 16px
+  color: #B1B1B1
+  margin-top: 20px
+  margin-bottom: 20px
+
+.genre-flex
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  align-items: center
+  gap: 10px
+  margin-top: 30px
+
+  & label
+    font-weight: 300
+    font-size: 0.786rem
+    color: #000000
+    margin-right: 20px
+
+  & input
+    margin: 0
+    width: 17px
+    height: 17px
+    border: 0.5px solid #A4A4A4
+    box-sizing: border-box
+  & input:hover
+    border: 0.5px solid #A4A4A4
+
+.registration-block     
+    width: 652px
+    display: flex
+    flex-direction: column
+
+.registration
+
+  &__title
+    text-transform: uppercase
+    font-weight: 300
+    font-size: 1.714rem
+    line-height: 29px
+    color: #000000
+  
+  &__text
+    font-weight: 300
+    font-size: 1.714rem
+    line-height: 29px
+    color: #000000
+    padding-top: 22px
+    padding-bottom: 5px
+  
+  &__list-item
+    margin-top: 16px
+    font-weight: 300
+    font-size: 1.714rem
+    line-height: 29px
+    color: #000000
