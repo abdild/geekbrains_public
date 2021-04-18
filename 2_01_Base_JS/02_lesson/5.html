@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        // где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        // переданного значения операции (использовать switch) выполнить одну из арифметических 
+        // операций
+        // (использовать функции из задания 4) и вернуть полученное значение.
+
+        
+        function add(a, b) {
+            return `Сумма равна: ${a + b}`;
+        }
+
+        function sub(a, b) {
+            return `Разность равна: ${a - b}`;
+        }
+
+        function div(a, b) {
+            return `Деление равно: ${(a / b).toFixed(2)}`;
+        }
+
+        function mul(a, b) {
+            return `Произведение равно: ${a * b}`;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch(operation) {
+                case "add":
+                    return add(arg1, arg2);
+                    break;
+                case "sub":
+                    return sub(arg1, arg2);
+                    break;
+                case "div":
+                    return div(arg1, arg2);
+                    break;
+                case "mul":
+                    return mul(arg1, arg2);
+                    break;
+                default:
+                    return "Error!";
+            }
+        }
+
+        let arg1 = +prompt("Введите число:");
+        let arg2 = +prompt("Введите еще одно число");
+
+        alert(mathOperation(arg1, arg2, "add"));
+        alert(mathOperation(arg1, arg2, "sub"));
+        alert(mathOperation(arg1, arg2, "div"));
+        alert(mathOperation(arg1, arg2, "mul"));
+    </script>
+</body>
+</html>
