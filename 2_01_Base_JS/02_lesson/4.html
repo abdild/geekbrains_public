@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с двумя 
+        // параметрами. Т.е. например, функция для сложения должна принимать два числа, складывать их 
+        // и возвращать результат.
+        // Обязательно использовать оператор return.
+
+        
+        function add(a, b) {
+            return `Сумма равна: ${a + b}`;
+        }
+
+        function sub(a, b) {
+            return `Разность равна: ${a - b}`;
+        }
+
+        function div(a, b) {
+            return `Деление равно: ${(a / b).toFixed(2)}`;
+        }
+
+        function mul(a, b) {
+            return `Произведение равно: ${a * b}`;
+        }
+
+        let a = +prompt("Введите число:");
+        let b = +prompt("Введите еще одно число");
+
+        alert(add(a, b));
+        alert(sub(a, b));
+        alert(div(a, b));
+        alert(mul(a, b));
+    </script>
+</body>
+</html>
