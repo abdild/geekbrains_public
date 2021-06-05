@@ -55,12 +55,18 @@ class goodsList {
     }
 
     countCostAllGoods() {
-        let countSum = 0;
-        this.goods.forEach(good => {
-            const goodItem = new goodsItem(good.title, good.price, good.img);
-            (goodItem.price !== undefined) ? countSum += goodItem.price : countSum = countSum;
-        });
-        console.log(`Сумма: ${countSum}`);
+        // Вариант 1.
+        // let countSum = 0;
+        // this.goods.forEach(good => {
+        //     const goodItem = new goodsItem(good.title, good.price, good.img);
+        //     (goodItem.price !== undefined) ? countSum += goodItem.price : countSum = countSum;
+        // });
+        // // console.log(`Сумма: ${countSum}`);
+
+        // return countSum;
+        
+        // Вариант 2.
+        return this.goods.reduce((sum, item) => (item.price != undefined) ? sum += item.price : sum = sum, 0);
     }
 }
 
@@ -104,7 +110,7 @@ const init = () => {
     const list = new goodsList();
     list.fetchGoods();
     list.renderList();
-    list.countCostAllGoods();
+    console.log(`Общая сумма: ${list.countCostAllGoods()}`);
 }
 
 window.onload = init;
