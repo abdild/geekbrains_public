@@ -23,7 +23,7 @@ class GoodsItem {
                 <h3 class="title">${this.title}</h3>
                 <img src="${this.img}" alt=""${this.title}>
                 <p>Цена: ${this.checkPrice(this.price)}</p>
-                <button class="add-button" type="button" id="${this.id}">В корзину</button>
+                <button class="add-button" type="button" id="${this.id}">Добавить в корзину</button>
             </div>
         `
     };
@@ -38,7 +38,7 @@ class GoodsList {
         const response = await fetch(`${API_URL}/catalogData.json`);
         const data = await response.json();
         this.goods = data;
-        console.log(this.goods);
+        // console.log(this.goods);
     }
 
     renderList() {
@@ -73,6 +73,11 @@ class BasketItem {
                     <div class="basket-title">${this.title}</div>
                     <div>${this.price}</div>
                 </div>
+                <button class="removeItem-button" type="button" id="${this.id}">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                
+                </button>                
             </div>
         `
     };
@@ -94,6 +99,8 @@ class BasketItem {
 class BasketList {
     constructor() {
         this.goodsListInBasket = [];
+        this.countBasket = 0;
+        this.countSum = 0;
     }
 
     async visibilityBasket() {
@@ -117,9 +124,11 @@ class BasketList {
     // Добавление товара в корзину
     addItem(title = "Неизвестный товар", price, id, img = "https://ericson-lab.com/wp-content/uploads/2017/08/nophoto.png") {
         const itemToBasket = new BasketItem(title, price, id, img);
-        console.log(itemToBasket);
         this.goodsListInBasket.push(itemToBasket);
-        console.log(this.goodsListInBasket);
+        // Подсчет количества товаров в корзине
+        this.countBasket += 1;
+        // Подсчет суммы всех товаров в корзине
+        this.countSum += itemToBasket.price;
     }
 
     renderBasketList() {
@@ -128,16 +137,20 @@ class BasketList {
         this.goodsListInBasket.forEach(good => {
             const goodItem = new BasketItem(good.title, good.price, good.id, good.img);
             listBasketGoods += goodItem.renderBasketItem();
-        })
+        });
+        listBasketGoods += `
+            Товаров: ${this.countBasket}
+            Сумма: ${this.countSum}
+        `;
 
         document.querySelector('.basket-list').innerHTML = listBasketGoods;
     }
-    // Удаление товара из корзины
+    // Удаление товара в корзине
+    removeItem() {
+        const removeItemButtons = this.goodsListInBasket;
+        alert(removeItemButtons);
+    }
 
-    // Подсчет количества товаров
-    countItems() { }
-    // Подсчет суммы заказов
-    countSum() { }
     // Удаление всех товаров из корзины
     clearBasket() { }
     // Оформление заказа
@@ -163,14 +176,11 @@ window.onload = async () => {
             console.log(event.target.id);
             for (let good of list.goods) {
                 if (good.id_product == event.target.id) {
-                    console.log(good.img);
-                    // console.log(good.product_name, good.price, good.id_product, good.img);
                     listBasket.addItem(good.product_name, good.price, good.id_product, good.img);
                 }
             }
-            // console.log(listBasket);
             listBasket.renderBasketList();
+            console.log(listBasket.goodsListInBasket);
         });
     }
-
 }
