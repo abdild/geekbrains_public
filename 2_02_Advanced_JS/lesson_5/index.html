@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work lesson 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav class="container">
+                <div class="logo">eShop</div>
+                <button class="cart-button" type="button">Корзина</button>
+            </nav>
+            <div class="basket" style="display:none;">
+                <div class="basket-header">
+                    Корзина
+                    <svg class="close-icon" id="closeBasket" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="basket-list"></div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="goods-list"></div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
