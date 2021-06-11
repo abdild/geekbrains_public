@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function showName() {
+            console.log(this);
+            let userName = 'Kate';
+            alert(this.userName);
+        };
+
+        const user1 = {
+            userName: 'Alex'
+        };
+        
+        const user2 = {
+            userName: 'John'
+        };
+
+        // showName.call(user1);
+        // showName.call(user2);
+        showName();
+    </script>
+</body>
+</html>
