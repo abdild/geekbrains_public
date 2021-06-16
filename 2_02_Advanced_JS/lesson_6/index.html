@@ -12,13 +12,15 @@
         <header>
             <nav class="container">
                 <div class="logo">eShop</div>
-                <div>
+                <search-block></search-block>
+                <!-- <div>
                     <input v-model.lazy="searchLine" type="text" class="goods-search" />
                     <button @click="filterGoods(searchLine)" class="search-button" type="button">Найти</button>
-                </div>
+                </div> -->
                 <button @click="isVisibleCart =!isVisibleCart" class="cart-button" type="button">Корзина</button>
             </nav>
-            <div v-show="isVisibleCart" class="basket">
+            <basket-block></basket-block>
+            <!-- <div v-show="isVisibleCart" class="basket">
                 <div class="basket-header">
                     Корзина
                     <svg @click="isVisibleCart =!isVisibleCart" class="close-icon" id="closeBasket" viewBox="0 0 24 24" fill="none"
@@ -27,10 +29,11 @@
                     </svg>
                 </div>
                 <div class="basket-list"></div>
-            </div>
+            </div> -->
         </header>
         <main class="container">
-            <div v-if="filteredGoods != ''" class="goods-list">
+            <goods-list :goods="filteredGoods"></goods-list>
+            <!-- <div v-if="filteredGoods != ''" class="goods-list">
                 <div class="goods-item" v-for="good in filteredGoods" :key="good.id_product">
                     <img :src="imgCatalog" :alt="good.product_name">
                     <h3 class="title">{{ good.product_name }}</h3>
@@ -38,7 +41,7 @@
                     <button class="add-button" type="button" @click="addProduct(good)">Добавить в корзину</button>
                 </div>
             </div>
-            <div v-else class="goods-list">Нет данных</div>
+            <div v-else class="goods-list">Нет данных</div> -->
         </main>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
