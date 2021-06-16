@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <el></el>
+        <some-comp></some-comp>
+        <button v-for="tab of tabs" :key="tab" @click="active = tab"> {{ tab }}</button>
+        <!-- keep-alive - для кеширования, например, введенной в input информации -->
+        <keep-alive>
+            <component :is="currentTabName"></component>
+        </keep-alive>
+        <!-- <comp-one v-for="el of someArr" :key="el"></comp-one> -->
+        <!-- <sibling ref="refSibling"></sibling>
+        <some-comp text="Some heading">
+            <button @click="increase">Some button</button>
+        </some-comp>
+        <some-comp text="Another heading"></some-comp>
+        <some-comp :text="title">
+            <h3>Some heading</h3>
+        </some-comp> -->
+        <!-- <counter :count="counter" @increase="increase"></counter>
+        <counter :count="counter" @increase="increase"></counter>
+        <counter :count="counter" @increase="increase"></counter> -->
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

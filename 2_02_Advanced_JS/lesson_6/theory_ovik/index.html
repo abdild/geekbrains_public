@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work lesson 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <some-component :name="myName" :surname="mySurName"></some-component>
+
+        <!-- <header>
+            <nav class="container">
+                <div class="logo">eShop</div>
+                <div>
+                    <input v-model.lazy="searchLine" type="text" class="goods-search" />
+                    <button @click="filterGoods(searchLine)" class="search-button" type="button">Найти</button>
+                </div>
+                <button @click="isVisibleCart =!isVisibleCart" class="cart-button" type="button">Корзина</button>
+            </nav>
+            <div v-show="isVisibleCart" class="basket">
+                <div class="basket-header">
+                    Корзина
+                    <svg @click="isVisibleCart =!isVisibleCart" class="close-icon" id="closeBasket" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="basket-list"></div>
+            </div>
+        </header>
+        <main class="container">
+            <div v-if="filteredGoods != ''" class="goods-list">
+                <div class="goods-item" v-for="good in filteredGoods" :key="good.id_product">
+                    <img :src="imgCatalog" :alt="good.product_name">
+                    <h3 class="title">{{ good.product_name }}</h3>
+                    <p>Цена: {{ good.price }}</p>
+                    <button class="add-button" type="button" @click="addProduct(good)">Добавить в корзину</button>
+                </div>
+            </div>
+            <div v-else class="goods-list">Нет данных</div>
+        </main> -->
+    </div>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
