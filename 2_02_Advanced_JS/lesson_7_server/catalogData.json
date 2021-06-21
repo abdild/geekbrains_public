@@ -1,0 +1,12 @@
+[
+    {"id_product": 1, "product_name": "Мышка", "price": 1000},
+    {"id_product": 2, "product_name": "Клавиатура", "price": 2500},
+    {"id_product": 3, "product_name": "Колонки", "price": 1400},
+    {"id_product": 4, "product_name": "Наушники", "price": 1250},
+    {"id_product": 5, "product_name": "Коврик", "price": 350},
+    {"id_product": 6, "product_name": "Ноутбук", "price": 56000},
+    {"id_product": 7, "product_name": "Кресло", "price": 3250},
+    {"id_product": 8, "product_name": "Сетевой фильтр", "price": 900},
+    {"id_product": 9, "product_name": "Монитор", "price": 24990},
+    {"id_product": 10, "product_name": "iPad", "price": 24990}
+]
